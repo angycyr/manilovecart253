@@ -7,12 +7,7 @@ hopefully this repository will remain calm, collected, and organized. but this i
 i could not get my ass off of cobblemon, this is becoming a problem...
 
 insert image here vv
-<<<<<<< HEAD
-![banner](images/lvl%20100%20feebas.png)
+![banner](images/lvl%20100%20feebas.png) \n
 wow look at the time i spent on cobblemon! so cool.
 
 cartcartcartcartcartcartcartcartcartcartcartcartcart This is Pippin Barr’s coursework repository for CART253This is Pippin Barr’s coursework repository for CART253This is Pippin Barr’s coursework repository for CART253This is Pippin Barr’s coursework repository for CART253This is Pippin Barr’s coursework repository for CART253
-=======
-
-cartcartcartcartcartcartcartcartcartcartcartcartcart This is Pippin Barr’s coursework repository for CART253This is Pippin Barr’s coursework repository for CART253This is Pippin Barr’s coursework repository for CART253This is Pippin Barr’s coursework repository for CART253This is Pippin Barr’s coursework repository for CART253
->>>>>>> 4178e9722322d9185bdacc8852d68f11bccae9ab
