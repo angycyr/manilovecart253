@@ -1,8 +1,8 @@
 # birds, where do they come from?
 
-Angy
+Angy, sydney, and konstantinos
 
-[View this project online](landscape.js)
+[View this project online](./index.html)
 
 ## Description
 
