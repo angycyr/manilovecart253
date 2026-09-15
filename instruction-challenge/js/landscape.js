@@ -16,6 +16,7 @@
 */
 let CAW
 
+describe("in our function set up, there is canvas creation and loading of CAWS sounds")
 async function setup() {
     createCanvas(900, 900);
     CAW = await loadSound ('./assets/sounds/CARSW.mp3');
@@ -25,6 +26,9 @@ async function setup() {
 /**
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
+describe("in our draw, we set the background to a nice blue. then added a pink circle with low opacity for loop to create a beautiful gradient sunset")
+describe("there are mountains created by triangles and a quad. they are purple")
+describe("when mouse is pressed, a globbular bird appears")
 function draw() {
     background(110,120,210)
 
@@ -48,10 +52,13 @@ pop()
           bird();
     }
 }
+
+describe("in our function mousepressed, the bird caws once")
 function mousePressed(){
     CAW.play();
 }
 
+describe("function birds draws a bird and it gets called when mouse is pressed")
 function bird (){
     //head
     push()
