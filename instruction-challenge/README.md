@@ -2,7 +2,7 @@
 
 Angy, sydney, and konstantinos
 
-[View this project online](./index.html)
+[View this project online](https://angycyr.github.io/manilovecart253/instruction-challenge/)
 
 ## Description
 
