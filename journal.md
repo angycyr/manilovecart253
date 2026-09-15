@@ -20,6 +20,6 @@ it would be cool if my art could trigger thoughts and questions but also be admi
 (i hope that no one is expectign anything too profound or structured from this text, ive been trying to fix my sleep schedule for the past month and receiving unsatisfactory results on each proceeding day. I have a feeling that the goal of this excersice is to get a writing sample so mister Pippin and other associates have something to compare to if ever there are doubts of ai. i hope i've witten enough, gosh i dont know how to eyeball 250 words) <br>
 
 okay image uhh <br>
- [screenshot](images/Screenshot%202026-09-15%20031245.png) <br>
+ ![screenshot](images/Screenshot%202026-09-15%20031245.png) <br>
  also this ^^ idk if thats supposed to look like that. it looks curse! why is it in dark mode?? uhhhhhhhhhhhhhh, the rest of the live reposetory looks fine and normal. its just that looks odd. weirdddd <br>
  instinctively CTRL+S i dont know if it matters, i dont see any icons popping up telling me it does
