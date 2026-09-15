@@ -14,8 +14,11 @@
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
-function setup() {
+let CAW
+
+async function setup() {
     createCanvas(900, 900);
+    CAW = await loadSound ('./assets/sounds/CARSW.mp3');
 }
 
 
@@ -40,7 +43,13 @@ fill(90,50,140)
     triangle(-300, 700, 90, 200, 300, 500)
     quad(700, 450, 450, 900, 900, 900, 900, 475);
 pop()
-bird();
+
+    if(mouseIsPressed){
+          bird();
+    }
+}
+function mousePressed(){
+    CAW.play();
 }
 
 function bird (){
@@ -82,4 +91,5 @@ function bird (){
     line(200,810,210,855)
 
     pop()
+
 }
