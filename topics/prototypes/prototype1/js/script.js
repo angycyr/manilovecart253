@@ -46,7 +46,7 @@ function draw() {
   }
 }
 
-
+describe("when mouse is pressed, the meow sound plays")
 function mousePressed() {
   meow.play();
 }
