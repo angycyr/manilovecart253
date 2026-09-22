@@ -1,12 +1,12 @@
-# TITLE OF PROJECT
+# MrFurious becomes a bird (variables challenge)
 
-AUTHOR NAME
-
+angy and syd
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+have you ever hate birds so much you became one?.
+- move your mouse around to enrage mrFurious even more
 
 ## Attribution
 
@@ -15,6 +15,7 @@ This bit should attribute any code, assets or other elements used taken from oth
 > - This project uses [p5.js](https://p5js.org).
 > - The clown image is a capture of the clown from the Apple emoji character set.
 > - The barking sound effect is "single dog bark 1" by crazymonke9 from freesound.org: https://freesound.org/people/crazymonke9/sounds/418107/
+> - The crow sound effect is "crow1" by freesounds_community from pixabay.com: https://pixabay.com/sound-effects/nature-crow1-5986/ 
 
 ## License
 
