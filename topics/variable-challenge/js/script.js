@@ -1,6 +1,6 @@
 /**
  * Mr. Furious
- * Pippin Barr
+ * Pippin Barr (w/ angy and syd)
  *
  * A guy who becomes visibly furious!
  */
@@ -19,18 +19,20 @@ let mrFurious = {
     g: 225,
     b: 225
   },
+  // Movement
   agitation: 180,
   speed:1
 };
 
+// Sky colour
 let skyColour = {
     r: 160,
     g: 180,
     b: 200
 };
-
+// sound variable
 let CAW;
-
+// Bird object
 let bird = {
     x: 200,
     y: 200,
@@ -39,11 +41,15 @@ let bird = {
     speed: 1,
     size: 100
 }
+// contraining the x and y values of mr furious to keep him on canvas
 let maxX;
 let maxY;
 
 /**
  * Create the canvas
+ * preloads caw sound
+ * sets base bird randoms
+ * sets angle mode to degrees
  */
 async function setup() {
   createCanvas(400, 400);
@@ -61,7 +67,7 @@ async function setup() {
  */
 function draw() {
   background(skyColour.r, skyColour.g, skyColour.b);
-
+// makes mr furious shake with rage
   mrFurious.x = mrFurious.x + random(-mrFurious.speed, mrFurious.speed);
   maxX= constrain(mrFurious.x, mrFurious.agitation , width- mrFurious.agitation);
 
@@ -72,25 +78,26 @@ function draw() {
   mrFurious.speed = mrFurious.speed + 0.01;
 
   sirFurious(maxX, maxY);
-
+// constrains the green value of mr furious, makes him pink at some point
   let keepGreen = constrain(mrFurious.fill.g, 50, 255);
   mrFurious.fill.g = keepGreen;
 
+// draws bird and rotates it around the canvas
   push();
   let angle =frameCount * 1;
   rotate(angle);
   Bird();
   translate(width/2, height/2);
   pop();
-
+// attemps to keep the bird on canvas but fails miserably
   bird.x = bird.x + random(-1,1) * bird.x + random(-5,10);
   bird.y = bird.y + random(-1,1) * bird.speed;
-
+// keeps bird within canvas (NOT REALLY LMAO)
   bird.constrainX = constrain(bird.x, 50, width-50);
   bird.constrainY = constrain(bird.y, 50, height-50);
 
 }
-
+// makes mr fursious more red as the mouse moves
 function mouseMoved(){
     mrFurious.fill.g--;
 
@@ -137,7 +144,7 @@ function Bird(){
 }
 
 function sirFurious(x,y){
-      // Draw Mr. Furious as a coloured circle
+// Draw Mr. Furious as a coloured circle
   push();
   noStroke();
   fill(mrFurious.fill.r, mrFurious.fill.g, mrFurious.fill.b);
@@ -149,12 +156,13 @@ function sirFurious(x,y){
   circle(x - 50, y, mrFurious.size - 125);
   circle(x + 50, y, mrFurious.size - 125);
   pop();
-
+// makes sky night
   skyColour.r = skyColour.r - 0.01;
   skyColour.g = skyColour.g - 0.01;
   skyColour.b = skyColour.b - 0.01;
 }
 
+// plays caws sound when mouse is pressed
 function mousePressed(){
     CAW.play();
 }
