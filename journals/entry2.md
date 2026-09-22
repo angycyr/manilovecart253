@@ -7,3 +7,5 @@ idk if you want to go back, thats a lot of reading... <br>
 this week's challenge was geared towards introducing people to p5.js coding syntax. As someone who is already somewhat proficient with p5.js, I took this time to revise some elements, such as for loops, conditional statements, loading assets, and looking over some of the preset functions. 
 
 I paired up with two other students from the IMA program for this challenge. Since the subject was landscapes, we thought it would be fun to do a gradient sunset
+
+[week 2 lanscape](topics/instruction-challenge/js/landscape.js) <br>
