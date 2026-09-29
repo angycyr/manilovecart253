@@ -25,11 +25,33 @@ let bird = {
     fill: 40,
 };
 
+let target = {
+    x: undefined,
+    y: undefined,
+    size: 400,
+    stroke: "#0000"
+
+}
+
+let seeds
+let caw
+let angle = 3.43242;
+
+async function preload() {
+    seeds = await loadImage("./assets/images/bowlseEd.jpeg")
+    caw = await loadSound("./assets/sounds/CARSW.mp3")
+}
 /**
  * Create the canvas
  */
-function setup() {
+async function setup() {
     createCanvas(1000, 1000);
+    await preload();
+
+    target.x = random(200, 800)
+    target.y = random(200, 800)
+    rectMode(CENTER)
+    angleMode(RADIUS)
 }
 
 /**
@@ -37,6 +59,8 @@ function setup() {
  */
 function draw() {
     background("#aaaaaa");
+
+    drawTarget();
 
     // Move user circle
     moveUser();
@@ -112,8 +136,9 @@ function drawPuck() {
 }
 
 function movePuck() {
-    let xx = constrain(puck.x, 0, width)
-    let yy = constrain(puck.y, 0, height)
+    // attempt to constrain (failed)
+    // let xx = constrain(puck.x, 0, width)
+    // let yy = constrain(puck.y, 0, height)
 
     const d = dist(bird.x, bird.y, puck.x, puck.y);
     const overlap = (d < bird.size / 2 + puck.size / 2);
@@ -130,5 +155,38 @@ function movePuck() {
     puck.y += puck.velocity.y;
 
 
+
+}
+
+function drawTarget() {
+    push()
+    noFill()
+    strokeWeight(5)
+    circle(target.x + 145, target.y + 110, target.size)
+    pop()
+
+    push()
+    translate(target.x + 145, target.y + 110)
+    // dotted lines 
+    for (let i = 0; i < 360; i += 1) {
+
+        strokeWeight(4)
+        stroke("#aaaaaa")
+        line(0, -210, 0, 210)
+        rotate(angle)
+        // angle = 1
+    }
+    pop()
+    image(seeds, target.x, target.y)
+
+    const d2 = dist(puck.x, puck.y, target.x, target.y);
+    const overlap2 = (d2 < puck.size / 2 + target.size / 2);
+
+    console.log(caw.playing, overlap2)
+    if (overlap2 && !caw.playing) {
+        caw.start();
+    } else {
+        // caw.stop();
+    }
 
 }
