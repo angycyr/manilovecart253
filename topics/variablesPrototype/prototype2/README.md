@@ -13,6 +13,9 @@ This bit should attribute any code, assets or other elements used taken from oth
 > - The clown image is a capture of the clown from the Apple emoji character set.
 > - The barking sound effect is "single dog bark 1" by crazymonke9 from freesound.org: https://freesound.org/people/crazymonke9/sounds/418107/
 > - The masking cirle is from Vecteezy (no author) from veecteezy.com: https://www.vecteezy.com/png/1192290-circle 
+> - the music is the instrumental of  The Collective Deja Vu of Being Cynical (feat. Lantic) by CHALKEY: https://www.youtube.com/watch?v=wsVYvOxJG7w&t=1s
+> - art by angy (thats me!)
+
 
 ## License
 
