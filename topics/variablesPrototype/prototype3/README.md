@@ -1,13 +1,12 @@
-# TITLE OF PROJECT
+# colours colours
 
-AUTHOR NAME
-
+angy
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
 ## Description
+circle bounces around and changes colours when it touches a wall
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
-
+no interaction, only perception
 ## Attribution
 
 This bit should attribute any code, assets or other elements used taken from other sources. For example:
