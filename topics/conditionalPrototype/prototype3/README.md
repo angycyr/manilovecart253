@@ -1,12 +1,12 @@
-# TITLE OF PROJECT
+# population control.
 
-AUTHOR NAME
+Angy
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+make circle by clicking, if theres too many circle, clicking will remove circles
 
 ## Attribution
 

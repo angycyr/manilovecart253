@@ -13,7 +13,7 @@ let theColouur = {
 }
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ *create canvas
 */
 function setup() {
     createCanvas(400,300)
@@ -21,7 +21,7 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * makes the bg grey, summons the colour buttons, and checks if the mouse is hovering over a button to add or substract from the total colour
 */
 function draw() {
     background('#aaaaaa')
@@ -58,7 +58,7 @@ function draw() {
 
 }
 
-
+// make red, green, and blue buttons with arrows to add or substract from the total colour
 function makeRedButtons(x){
     fill(255,0,0)
     rect(x, 25, 100, 50)
@@ -100,7 +100,7 @@ function makeBlackButton(){
     fill('white')
     text("click me", 165, 155)
 }
-
+// when the black button is clicked, the background changes to the total colour
 function fillColour(){
     fill(theColouur.red, theColouur.green, theColouur.blue)
     rect(0,0,width,height)
