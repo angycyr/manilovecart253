@@ -1,13 +1,12 @@
-# TITLE OF PROJECT
+# unintuitive colour picker
 
-AUTHOR NAME
+angy
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
-
+hover the colour buttons to add or substract from the total colour. click the middle button to reveal the colour
 ## Attribution
 
 This bit should attribute any code, assets or other elements used taken from other sources. For example:
