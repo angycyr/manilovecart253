@@ -1,18 +1,22 @@
-/**
- * Title of Project
- * Author Name
+/**flipping hugo
+ * angy
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * use ''a'' and ''d'' to move hugo left and right
+ * use ''w'' and ''s'' to make hugo do a front flip or back flip
  */
 
 "use strict";
 let hugo = {
     honkself: undefined,
     x: 600,
-    y: 240,
+    y: 200,
+    angle: 0,
+    isFlipping: false,
+    orientation: 'front',
+    flipCount: 0,
 };
 let flower;
+
 
 // loads the images for hugo and the flower
 async function preload() {
@@ -38,16 +42,45 @@ async function setup() {
 }
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * 
 */
 function draw() {
     background(0, 0, 100);
     imageMode(CENTER);
-    image(hugo.honkself, hugo.x, hugo.y, 100, 100);
+    
+    push()
+    translate(hugo.x, hugo.y);
+    rotate(hugo.angle);
+    image(hugo.honkself, 0, 0, 200, 200);
+    pop();
+
+    if (hugo.isFlipping) {
+        if (hugo.orientation === 'front') {
+            hugo.angle += 0.1;
+            if (hugo.angle >= TWO_PI) {
+                hugo.angle = 0;
+                hugo.isFlipping = false;
+                hugo.flipCount++;
+            }
+        } else if (hugo.orientation === 'back') {
+            hugo.angle -= 0.1;
+            if (hugo.angle <= -TWO_PI) {
+                hugo.angle = 0;
+                hugo.isFlipping = false;
+                hugo.flipCount++;
+            }
+        }
+    }
+
+    if (hugo.flipCount >= 5) {
+        push();
+        image(flower, 600, 200, 100, 100);
+        pop();
+    }
 }
 
 function goRight() {
-    hugo.x += 5;
+    hugo.x = hugo.x + 5;
 }
 
 function goLeft() {
@@ -55,9 +88,11 @@ function goLeft() {
 }
 
 function doFrontFlip() {
-    hugo.y -= 5;
+    hugo.isFlipping = true;
+    hugo.orientation = 'front';
 }
 
 function doBackFlip() {
-    hugo.y += 5;
+    hugo.isFlipping = true;
+    hugo.orientation = 'back';
 }

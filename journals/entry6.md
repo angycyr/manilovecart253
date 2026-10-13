@@ -16,7 +16,7 @@ my head was very empty at the start of this assignment. each time i would see an
 in my first prototype, i used mouseDragged() and mouseReleased() to create game when hugo (the clown) gives you a flower if you pet him. the flower colour changes based on how much you love hugo and hugo shakes to give a visual indication of the petting. i should probably start using constants instead of setting everything to a variable. i dont think it would do anything performance wise, but its probably just a good pratice to intergrate.
 [online project](https://angycyr.github.io/manilovecart253/topics/eventPrototype/prototype1/index.html)<br>
 [js](https://github.com/angycyr/manilovecart253/blob/main/topics/eventPrototype/prototype1/js/script.js)<br>
-![banner](../images/condpanda.png) <br>
+![banner](../images/hugopet.png) <br>
 
 in my second prototype, i made a unintuitive colour picker. i was inspired by recently experienmenting with oklch. i remember mapping out buttons to be reallyy annoying... so i made 7 for this one. it was indeed as annoying as i remember.  <br>
 [online project](https://angycyr.github.io/manilovecart253/topics/eventPrototype/prototype2/index.html)<br>
