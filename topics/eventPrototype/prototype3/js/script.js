@@ -1,12 +1,13 @@
 /**
- * rainbow hugo
+ * hue hugo
  * angy
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * hover over hugo to make honk colourful
+ * colour is based off of mouse variables
  */
 
 "use strict";
+// hugo variables
 let hugo;
 let hugoHue;
 let isShifting = false;
@@ -20,14 +21,14 @@ const hugoHeight = 800;
 let mouseSpeed;
 
 let flower;
-
+// preps images and preps for pixel analyscic
 async function preload() {
     hugo = await loadImage("../images/hugo.png");
     hugo.loadPixels();
     flower = await loadImage("../images/hugosflower.png");
 }
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * creates canvas
 */
 async function setup() {
     await preload();
@@ -36,14 +37,14 @@ async function setup() {
 
 }
 
-
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * 
 */
 function draw() {
     background('#000000')
     image(hugo, hugoX, hugoY, hugoWidth, hugoHeight)
 
+// sets the tint colour
     mouseSpeed = abs(mouseX - pmouseX)
 
     let r = map(mouseX,0,width, 0,255)
@@ -51,8 +52,7 @@ function draw() {
     let g = map(mouseSpeed, 0, 75,0,255)
     hugoHue = color(r,b,g)
 
-    print(g)
-    
+    // print(g)
 }
 
 function mouseMoved() {
@@ -67,14 +67,10 @@ function mouseMoved() {
     const imageY = Math.floor((mouseY - hugoY) * hugo.height / hugoHeight);
     const alphaIndex = 4 * (imageY * hugo.width + imageX) + 3;
 // if the transparency is anothing above 0, then it triggers.
+// otherwise resets
     if (hugo.pixels[alphaIndex] > 0) {
          tint(hugoHue)
     } else {
         noTint()
     }
-}
-
-function colourHonk () {
-    isShifting = true;
-    hugoHue = "#782390"
 }
