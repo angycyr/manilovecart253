@@ -18,12 +18,12 @@ in my first prototype, i used mouseDragged() and mouseReleased() to create game 
 [js](https://github.com/angycyr/manilovecart253/blob/main/topics/eventPrototype/prototype1/js/script.js)<br>
 ![banner](../images/hugopet.png) <br>
 
-in my second prototype, i made a unintuitive colour picker. i was inspired by recently experienmenting with oklch. i remember mapping out buttons to be reallyy annoying... so i made 7 for this one. it was indeed as annoying as i remember.  <br>
+since in my first prototype, i mainly used mouse commands and stuff within the p5 library, i wanted to use the keyboard in the second prototype. the most commonly used key i can think of were wasd, so thats what i ended up using for it with keydown and event.key. to add more spice, instead of having 'w' and 's' go forward and backwards, i used them to make hugo flip with rotate(). after 5 flips, hugo gives you a flower. coding for this one was a lot smoother than the previous one. i think i can award that to it being pretty straight foward and the only new piece of information being able to use full javascript as a the trigger. <br>
 [online project](https://angycyr.github.io/manilovecart253/topics/eventPrototype/prototype2/index.html)<br>
 [js](https://github.com/angycyr/manilovecart253/blob/main/topics/eventPrototype/prototype2/js/script.js)<br>
-![banner](../images/condpicker.png)<br>
+![banner](../images/hugoflip.png)<br>
 
-in my third and last prototype, bacteria spreading population control! the idea that for new life to grow, old must provide their bodies to nurish the young. i used a lot of different p5 object in this one! arrays, mapping, for loop, if statement, i feel really cool right now, now that its done. okay so maybe i can't really do all of those right of the top of my head, but its funny how it all comes back when i open the p5 reference! yay!<br>
+unlike the transition between prototype 1 and 2, there wasnt really a sensical progression fron here. so i just decided to do something simpler. i used mouseMoved() to check wether the mouse was hovering an image (this was actually not simple at all, i had to take 2 breaks) and shifting colours to add a bit of an accent with map() using mouse coords and speed<br>
 [online project](https://angycyr.github.io/manilovecart253/topics/eventPrototype/prototype3/index.html)<br>
 [js](https://github.com/angycyr/manilovecart253/blob/main/topics/eventPrototype/prototype3/js/script.js)<br>
-![banner](../images/condballs.png)
+![banner](../images/hugohue.png)

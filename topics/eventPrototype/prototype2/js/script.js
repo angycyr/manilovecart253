@@ -6,6 +6,7 @@
  */
 
 "use strict";
+// hugo variables
 let hugo = {
     honkself: undefined,
     x: 600,
@@ -15,6 +16,7 @@ let hugo = {
     orientation: 'front',
     flipCount: 0,
 };
+
 let flower;
 
 
@@ -26,7 +28,7 @@ async function preload() {
 
 async function setup() {
     await preload();
-
+// inputs
     createCanvas(1200, 300);
     document.addEventListener("keydown", (event) => {
         if (event.key === "a") {
@@ -42,18 +44,19 @@ async function setup() {
 }
 
 /**
- * 
+ * summons hugo, does flipping animation, and summons flower
 */
 function draw() {
     background(0, 0, 100);
     imageMode(CENTER);
-    
+// summons hugo
     push()
     translate(hugo.x, hugo.y);
     rotate(hugo.angle);
     image(hugo.honkself, 0, 0, 200, 200);
     pop();
 
+// flipping animation
     if (hugo.isFlipping) {
         if (hugo.orientation === 'front') {
             hugo.angle += 0.1;
@@ -72,13 +75,14 @@ function draw() {
         }
     }
 
+// gives flower based on amount of flips
     if (hugo.flipCount >= 5) {
         push();
         image(flower, 600, 200, 100, 100);
         pop();
     }
 }
-
+// mouvement triggers
 function goRight() {
     hugo.x = hugo.x + 5;
 }
@@ -87,6 +91,7 @@ function goLeft() {
     hugo.x -= 5;
 }
 
+// flip triggers
 function doFrontFlip() {
     hugo.isFlipping = true;
     hugo.orientation = 'front';
