@@ -77,7 +77,7 @@ function makePanda(){
 }
 
 function makeBackground(){
-    noStroke();
+    noStroke
     
     fill('#63806b'); 
     fill('#e09994')
