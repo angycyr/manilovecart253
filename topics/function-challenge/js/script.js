@@ -116,7 +116,8 @@ function moveBall(ball) {
     //Bounce the ball off the left + right 
     if (ball.x - ball.width / 2 < 0 ||
         ball.x + ball.width / 2 > width) {
-        ball.velocity.x = random(0, 5) * -1;
+        ball.velocity.x *= -1;
+
     }
 
     //Bounce the ball off the top 
