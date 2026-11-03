@@ -6,51 +6,105 @@
  */
 
 "use strict";
+let movement = {
+    x: undefined,
+    y: undefined,
+    speed: {
+        x: 1,
+        y: 1,
+    },
+    bob: false,
+}
 
 /**
  * Creates the canvas
  */
 function setup() {
     createCanvas(500, 500);
+
 }
+
+
 
 /**
  * Draws lines across the canvas with increasing thickness and
  * gradually lightening colour
  */
 function draw() {
-    background("pink");
 
-    stroke(0);
-    line(0, 0, 0, height);
+    if (movement.bob) {
+        movement.x = mouseX;
+        movement.y = mouseY;
+    } else {
+        movement.x += movement.speed.x;
+        movement.y += movement.speed.y;
 
-    stroke(25);
-    line(50, 0, 50, height);
+        if (movement.x > width || movement.x < 0) {
+            movement.speed.x *= -1;
+        }
+        if (movement.y > height || movement.y < 0) {
+            movement.speed.y *= -1;
+        }
+    }
 
-    stroke(50);
-    line(100, 0, 100, height);
+    // background("pink");
 
-    stroke(75);
-    line(150, 0, 150, height);
+    colorMode(HSB);
 
-    stroke(100);
-    line(200, 0, 200, height);
+    let i = 0;
+    let k = 0;
+    for (let j = 0; j < width; j += 10) {
 
-    stroke(125);
-    line(250, 0, 250, height);
+        fill(k, i, i)
+        noStroke();
+        // noFill(); 
+        // console.log(i, j)
+        rect(j, 0, j + 20, height)
+        i += sin(0.01 * movement.y * 0.01 * movement.x) * 10;
+        k += 8
 
-    stroke(150);
-    line(300, 0, 300, height);
+    }
 
-    stroke(175);
-    line(350, 0, 350, height);
 
-    stroke(200);
-    line(400, 0, 400, height);
+    let x = 0;
+    while (x < width) {
+        stroke(x / 2);
+        // strokeWeight(x / 50);
+        line(x, 0, movement.x, movement.y);
+        x += 50;
+    }
 
-    stroke(225);
-    line(450, 0, 450, height);
+    let y = 0;
+    while (y < height) {
+        stroke(y / 2);
+        // strokeWeight(y / 50);
+        line(0, y, movement.x, movement.y);
+        y += 50;
+    }
 
-    stroke(250);
-    line(500, 0, 500, height);
+    let a = 0;
+    while (a < width) {
+        stroke(a / 2);
+        // strokeWeight(a / 50);
+        line(a, height, movement.x, movement.y);
+        a += 50;
+    }
+
+    let b = 0;
+    while (b < height) {
+        stroke(b / 2);
+        // strokeWeight(b / 50);
+        line(width, b, movement.x, movement.y);
+        b += 50;
+    }
+
+
+}
+
+function mousePressed() {
+    movement.bob = true
+}
+
+function mouseReleased() {
+    movement.bob = false
 }
