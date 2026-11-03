@@ -1,12 +1,24 @@
-# TITLE OF PROJECT
+# lines
 
-AUTHOR NAME
-
+angy and sydd
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+look, over the hill, theres line
+
+woah so many line, they come from each side
+
+damn, lines
+
+you wouldnt think of it
+
+cuz line + line = lines
+
+its crazy
+
+its colour. 
+
 
 ## Attribution
 
