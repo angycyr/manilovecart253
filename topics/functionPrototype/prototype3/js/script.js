@@ -88,16 +88,17 @@ function movePanda(panda){
     }
 }
 
+// minigame
 function mousePressed(){
-    if (isPointInPanda(mouseX, mouseY, panda)) {
+    if (hoverPanda(mouseX, mouseY, panda)) {
         score++;
     }
 }
 
-function isPointInPanda(x, y, panda) {
-    const headX = panda.x;
-    const headY = panda.y - 50;
-    const headRadius = panda.size / 2;
+function hoverPanda(x, y, panda) {
+    let headX = panda.x;
+    let headY = panda.y - 50;
+    let headRadius = panda.size / 2;
     return ((x - headX) / headRadius) ** 2
         + ((y - headY) / headRadius) ** 2 <= 1;
 }
