@@ -35,7 +35,7 @@ function draw() {
 function createCard(){
     let card = {
         x: width/2,
-        y: height/2+300,
+        y: height/2,
         width: 400,
         height: 600,
         colour: {
