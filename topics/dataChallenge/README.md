@@ -1,13 +1,25 @@
-# TITLE OF PROJECT
+# dino acr lighaing
 
-AUTHOR NAME
+angy and syd
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
 ## Description
+hope you can read multiple languages becaue its randomly generated on refresh.
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
 
+
+
+
+
+
+
+
+
+
+
+
+we can't read.
 ## Attribution
 
 This bit should attribute any code, assets or other elements used taken from other sources. For example:
@@ -21,3 +33,5 @@ This bit should attribute any code, assets or other elements used taken from oth
 This bit could include the license you want to apply to your work. For example:
 
 > This project is licensed under a Creative Commons Attribution ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en)) license with the exception of libraries and other components with their own licenses.
+
+micheal approved 👍

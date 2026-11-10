@@ -1,0 +1,31 @@
+{
+    "description": "language of the text",
+    "carText": {
+        "en": "Click to generate a car name.",
+        "es": "Haga clic para generar un nombre de coche.",
+        "fr": "Cliquez pour générer un nom de voiture.",
+        "de": "Klicken Sie, um einen Autonamen zu generieren.",
+        "it": "Fai clic per generare un nome di auto.",
+        "pt": "Clique para gerar um nome de carro.",
+        "ru": "Нажмите, чтобы сгенерировать имя автомобиля.",
+        "zh": "点击生成汽车名称。",
+        "ja": "クリックして車の名前を生成します。",
+        "ko": "클릭하여 자동차 이름을 생성합니다.",
+        "ar": "انقر لتوليد اسم سيارة.",
+        "hi": "कार का नाम उत्पन्न करने के लिए क्लिक करें।"
+    },
+    "dinoText": {
+        "en": "Click to generate a dinosaur name.",
+        "es": "Haga clic para generar un nombre de dinosaurio.",
+        "fr": "Cliquez pour générer un nom de dinosaure.",
+        "de": "Klicken Sie, um einen Dinosauriernamen zu generieren.",
+        "it": "Fai clic per generare un nome di dinosauro.",
+        "pt": "Clique para gerar um nome de dinossauro.",
+        "ru": "Нажмите, чтобы сгенерировать имя динозавра.",
+        "zh": "点击生成恐龙名称。",
+        "ja": "クリックして恐竜の名前を生成します。",
+        "ko": "클릭하여 공룡 이름을 생성합니다.",
+        "ar": "انقر لتوليد اسم ديناصور.",
+        "hi": "डायनासोर का नाम उत्पन्न करने के लिए क्लिक करें।"
+    }
+}
