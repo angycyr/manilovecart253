@@ -1,18 +1,20 @@
 /**
- * Title of Project
- * Author Name
+ * An Attempt in Warding of Illness
+ * Angy
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * In this pro
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * create
 */
 function setup() {
-
+    createCanvas(720, 1280);
+    rectMode(CENTER);
+    background('#85ccc6');
+    drawParchment();
 }
 
 
@@ -20,5 +22,18 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+
+
+
+}
+
+function drawParchment(){
+    push();
+    fill('#f0df80');
+    stroke('#b9956b');
+    strokeWeight(4);
+    rect(width/2, height/2, 600, 1000);
+    pop();
+
 
 }
