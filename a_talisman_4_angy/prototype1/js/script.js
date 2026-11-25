@@ -6,7 +6,7 @@
  */
 
 "use strict";
-
+// ink variables
 let ink = {
     x: 0,
     y: 0,
@@ -20,7 +20,9 @@ let ink = {
  * create a canvas and draw a parchment
 */
 function setup() {
-    createCanvas(720, 1280);
+    let canvas = createCanvas(720, 1280);
+    // document.addEventListener('contextmenu', event => event.preventDefault());
+    canvas.elt.oncontextmenu = () => false; 
     rectMode(CENTER);
 
     background('#85ccc6');
@@ -29,7 +31,7 @@ function setup() {
 
 
 /**
- * nothing so far!
+ * reads inkPos
 */
 function draw() {
     inkPos();
@@ -46,10 +48,12 @@ function drawParchment(){
     pop();
 }
 
+// draws the ink based on mousebutton.direction
 function mouseDragged() {
   if (mouseButton.left) {
    drawInkDuo();
-  } else if (mmouseButton.right) {
+  } else if (mouseButton.right) {
+    // keeps bringing up right click button menus
     drawInkSolo();
   }
 }
